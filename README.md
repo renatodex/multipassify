@@ -1,3 +1,5 @@
+![Multipassify](https://dl.dropboxusercontent.com/u/3438271/apps_page_hero.png)
+
 # Multipassify
 Shopify Multipass module for Ruby
 
