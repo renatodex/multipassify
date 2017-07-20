@@ -11,7 +11,7 @@ class Multipassify
 
     # Use the Multipass secret to derive two cryptographic keys,
     # one for encryption, one for signing
-    hash = OpenSSL::Digest::Digest.new("sha256").digest(secret)
+    hash = OpenSSL::Digest.new("sha256").digest(secret)
     self.encryptionKey = hash[0,block_size]
     self.signingKey = hash[block_size, 32]
   end
@@ -32,7 +32,7 @@ class Multipassify
   end
 
   def encrypt(plaintext)
-    cipher = OpenSSL::Cipher::Cipher.new("aes-128-cbc")
+    cipher = OpenSSL::Cipher.new("aes-128-cbc")
     cipher.encrypt
     cipher.key = self.encryptionKey
 
