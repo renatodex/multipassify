@@ -16,14 +16,14 @@ Gem::Specification.new do |s|
   s.email = "renatodex@gmail.com".freeze
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "lib/multipassify.rb",
@@ -58,3 +58,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>.freeze, [">= 0"])
   end
 end
+
