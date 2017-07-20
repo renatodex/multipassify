@@ -26,7 +26,8 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/multipassify.rb"
+    "lib/multipassify.rb",
+    "multipassify.gemspec"
   ]
   s.homepage = "http://github.com/renatodex/multipassify".freeze
   s.licenses = ["MIT".freeze]
@@ -57,3 +58,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<simplecov>.freeze, [">= 0"])
   end
 end
+
