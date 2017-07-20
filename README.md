@@ -16,19 +16,19 @@ To use Multipass an Enterprise / Plus plan is required. The Multipass secret can
 Make sure "Accounts are required" or "Accounts are optional" is selected and Multipass is enabled.
 
 ``` ruby
-  require('multipassify');
+  require 'multipassify'
 
   # Construct the Multipassify encoder
-  multipassify = Multipassify.new("SHOPIFY MULTIPASS SECRET");
+  multipassify = Multipassify.new 'SHOPIFY MULTIPASS SECRET'
 
   # Create your customer data hash
-  customer_data = { email: 'test@example.com', remote_ip:'USERS IP ADDRESS', return_to:"http://some.url"};
+  customer_data = { email: 'test@example.com', remote_ip:'USERS IP ADDRESS', return_to:"http://some.url"}
 
   # Encode a Multipass token
-  token = multipassify.encode(customer_data);
+  token = multipassify.encode(customer_data)
 
   # Generate a Shopify multipass URL to your shop
-  url = multipassify.generate_url(customer_data, "yourstorename.myshopify.com");
+  url = multipassify.generate_url(customer_data, 'yourstorename.myshopify.com')
 
   # Generates a URL like:  https://yourstorename.myshopify.com/account/login/multipass/<MULTIPASS-TOKEN>
 ```
